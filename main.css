@@ -1,0 +1,64 @@
+html {
+    font-family: Calibri;
+    font-size: 1.2em;
+}
+table, iframe {
+    width: 370px;
+}
+th {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+tr:first-child {  
+    background-color: rgb(63,81,181);    
+    color: white;
+}
+tr:first-child th:first-child{  
+    width: 40px;
+    height: 58px;  
+    background-image: url(./images/head_left.png);
+}
+tr:nth-child(5) td.lable {
+    padding-top: 15px;
+}
+tr:first-child th:last-child{  
+    width: 42px;
+    height: 58px;  
+    background-image: url(./images/head_right.png);
+}
+.gradient { 
+    height: 7px;   
+    background-image: url(./images/head_bottom.png);
+}
+.button {
+    width: 15%;
+    float: right;
+}
+.lable {
+    padding: 10px 0 5px;
+    font-size: small;
+    color: rgb(211,211,211);
+}
+iframe[name="iframe_log"] {
+    margin: 10px 0;
+    border: 1px solid rgb(80,80,80);
+}
+.error {
+    color: red;
+    font-size: small;
+}
+input[type="text"] { 
+    padding: 0 0 4px;
+    border:none;
+    border-bottom: 2px solid red;
+    background: transparent url(./images/picker.png) right top no-repeat;
+}
+input[type="text"]:nth-child(even) {  
+    width: 80px;  
+    float: right;
+}
+input[type="text"]:nth-child(odd) {   
+    width: 270px;
+    float: left;
+}
+
