@@ -1,25 +1,19 @@
-html {
+html, th {
     font-family: Calibri;
     font-size: 1.2em;
+    font-weight: normal;
 }
 table, iframe {
     width: 370px;
 }
-th {
-    font-size: 1.2rem;
-    font-weight: normal;
-}
 tr:first-child {  
     background-color: rgb(63,81,181);    
-    color: white;
+    color: rgb(255,255,255);
 }
 tr:first-child th:first-child{  
     width: 40px;
     height: 58px;  
     background-image: url(./images/head_left.png);
-}
-tr:nth-child(5) td.lable {
-    padding-top: 15px;
 }
 tr:first-child th:last-child{  
     width: 42px;
@@ -30,9 +24,13 @@ tr:first-child th:last-child{
     height: 7px;   
     background-image: url(./images/head_bottom.png);
 }
+tr:nth-child(5) td {
+    padding-top: 15px;
+}
 .button {
-    width: 15%;
-    float: right;
+    width: 70px;
+    position:relative;
+    left:290px;  
 }
 .lable {
     padding: 10px 0 5px;
@@ -44,14 +42,17 @@ iframe[name="iframe_log"] {
     border: 1px solid rgb(80,80,80);
 }
 .error {
-    color: red;
+    color: rgb(255,0,0);
     font-size: small;
 }
 input[type="text"] { 
     padding: 0 0 4px;
     border:none;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid rgb(255,0,0);
     background: transparent url(./images/picker.png) right top no-repeat;
+}
+input[type="text"]::-ms-clear {
+    display: none;
 }
 input[type="text"]:nth-child(even) {  
     width: 80px;  
